@@ -11,7 +11,7 @@ class Poetry < Formula
 
   def install
     ENV["POETRY_HOME"] = prefix
-    system "python3", "get-poetry.py", "--accept_all", "--modify_path=False"
+    system "python3", "get-poetry.py", "--accept_all", "-y"
   end
 
   def caveats; <<~EOS
